@@ -15,7 +15,7 @@ function DoublyLinkedList(){
 				current=head,		//指向当前数据
 				previous,		//指向当前数据的前一个
 				index=0;			//数据的下标
-			if(position===0){
+			if(position==0){
 				if(!head){
 					head=node;
 					tail=node;
@@ -106,16 +106,17 @@ function DoublyLinkedList(){
 //测试
 var doublyLinkedList=new DoublyLinkedList();
 doublyLinkedList.insert(1,0);
+doublyLinkedList.insert(9,0);
 doublyLinkedList.insert(2,1);
 doublyLinkedList.insert(3,2);
 doublyLinkedList.insert(4,3);
 doublyLinkedList.insert(5,4);
 doublyLinkedList.insert(6,5);
 doublyLinkedList.print();
-doublyLinkedList.removeAt(2);
+//doublyLinkedList.removeAt(2);
 console.log("移除元素"+doublyLinkedList.removeAt(2));
 doublyLinkedList.print();
-doublyLinkedList.removeAt(0);
+//doublyLinkedList.removeAt(0);
 console.log("移除第一位元素"+doublyLinkedList.removeAt(0));
 doublyLinkedList.print();
 doublyLinkedList.removeAt(doublyLinkedList.size()-1);
